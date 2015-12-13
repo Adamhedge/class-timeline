@@ -1,0 +1,115 @@
+body {
+  background-color: #edeef0;
+  margin: 0px;
+  font-family: helvetica;
+  color: #585757;
+}
+
+hr {
+  margin-left: 23%;
+  color:black;
+  margin-top: 0px;
+}
+
+div {
+  width: 80%;
+}
+
+header {
+  min-height: 40px;
+  display: block;
+  margin-top: 20px;
+  max-width: 200px;
+  min-width: 200px;
+}
+
+p {
+  text-align: center;
+}
+
+i {
+  min-width: 40px;
+}
+
+span {
+  min-width: 40px;
+}
+
+i.fa-circle-thin {
+  color: white;
+  padding:0px;
+
+}
+.time-stamp {
+  display: flex;
+  margin-top:-2px;
+}
+
+.initial-text {
+  max-width: 200px;
+  min-width: 200px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+
+.circle {
+  width: 35px;
+  min-width: 35px;
+  height: 34px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.end {
+  background-color: red;
+}
+
+.start {
+  background-color: #20AFAF;
+}
+
+.hover-space {
+  margin-left: 10%;
+  padding-top: 10px;
+  min-width: 200px;
+
+}
+
+.time-line {
+  height: 80px;
+  display: flex;
+}
+
+.left-side {
+  width: 200px;
+  min-width: 200px;
+}
+
+.time-line > .middle {
+  margin-top:-5px;
+  margin-bottom: -2px;
+  width: 20px;
+  min-width: 20px;
+  z-index: -1;
+  margin-right: 20px;
+  border-right: 1px solid #585757;
+
+}
+
+.bubble {
+  height: 210px;
+  width: 40%;
+  background-color: white;
+  position: absolute;
+}
+
+.bubble-aarow {
+  width: 10px;
+  margin-top: 20px;
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  border-right:10px solid white; 
+}
