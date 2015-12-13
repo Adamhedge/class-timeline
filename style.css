@@ -2,6 +2,7 @@ body {
   background-color: #edeef0;
   margin: 0px;
   font-family: helvetica;
+  font-size: small;
   color: #585757;
 }
 
@@ -52,7 +53,6 @@ i.fa-circle-thin {
   padding-top: 10px;
 }
 
-
 .circle {
   width: 35px;
   min-width: 35px;
@@ -73,7 +73,6 @@ i.fa-circle-thin {
   margin-left: 10%;
   padding-top: 10px;
   min-width: 200px;
-
 }
 
 .time-line {
