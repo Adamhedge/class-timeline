@@ -140,6 +140,8 @@ var sortCommands = function(a, b){
 };
 
 //function that takes a timeline entry template and curates it to a command.
+//quite a bit of jquery here.  But I was glad to be able to do this in a 
+//modular way.
 var makeTimelineEntry = function(command, students, teachers){
   var result = $(layoutTemplate);
   $(result).find(".time").text(makeTimeStamp(command.timestamp));
@@ -176,16 +178,19 @@ var makeIDs = function(commands){
 
 //function that lays out all of the commands onto the timeline with timestamps
 var layoutCommands = function(session, commands, students, teachers){
+  //capture the commands passed for future functions to use.
   session = session;
   commands = commands;
   students = students;
   teachers = teachers;
+  //remove all previous timeline entries.
   $(".entry").remove();
   $(".add").remove();
   $(".first").find(".time").text(makeTimeStamp(session.startTime));
   $(".final").find(".time").text(makeTimeStamp(session.endTime));
   commands.sort(sortCommands);
   makeIDs(commands);
+  //add the commands to the timeline one by one.
   var command;
   var element = $(".first");
   for(var i = 0; i < commands.length; i ++){
