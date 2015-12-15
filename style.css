@@ -41,9 +41,11 @@ i.fa-circle-thin {
   padding:0px;
 
 }
+
 .time-stamp {
   display: flex;
   margin-top:-2px;
+  position:relative;
 }
 
 .initial-text {
@@ -96,19 +98,49 @@ i.fa-circle-thin {
 
 }
 
-.bubble {
-  height: 210px;
-  width: 40%;
-  background-color: white;
+.bubble-container {
   position: absolute;
+  display:flex;
+  left: 250px;
+  z-index: 5000;
+  top: -12px;
+  margin-bottom: 5px;
+}
+
+.bubble-hide {
+  visibility: hidden;
+}
+
+.bubble {
+  padding-top: 10px;
+  width: 180px;
+  left:258px;
+  background-color: white;
+  left: 258px;
 }
 
 .bubble-aarow {
-  width: 10px;
+  width: 5px;
   margin-top: 20px;
   width: 0; 
   height: 0; 
+  left: 248px;
+  top: -5px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent; 
   border-right:10px solid white; 
+}
+
+.bubble-text {
+  margin-left: 10px;
+  padding-bottom: 15px;
+}
+
+.bubble-text.bold {
+  padding-bottom: 0px;
+  font-weight: bold;
+}
+
+.more {
+  padding-bottom: 0px;
 }
